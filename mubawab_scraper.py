@@ -150,7 +150,7 @@ class MubawabScraper:
             return None, None, None, None, None
 
     def scrape_page(self, page_number):
-        base_url = f'https://www.mubawab.ma/fr/ct/casablanca/immobilier-a-louer:p:{page_number}'
+        base_url = f'https://www.mubawab.ma/fr/sc/immobilier-divers-a-louer:p:{page_number}'
         response = self.get_page(base_url)
         if not response:
             logger.error(f"Impossible de récupérer la page {page_number}")
