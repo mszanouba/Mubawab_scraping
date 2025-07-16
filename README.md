@@ -11,3 +11,19 @@ mubawab_scraping/
 ├── app.py # Point d'entrée (main) pour exécuter le scraper
 ├── sample_data.csv # Échantillon des données extraites (location uniquement)
 └── README.md # Ce fichier
+
+## 🚀 Lancement rapide
+
+### ✅ Prérequis
+
+- Python 3.7+
+- Les bibliothèques suivantes :
+  - `requests`
+  - `beautifulsoup4`
+  - `pandas`
+  - `urllib`
+
+### ⚙️ Installation des dépendances
+
+```bash
+pip install -r requirements.txt
