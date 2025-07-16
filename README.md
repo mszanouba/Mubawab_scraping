@@ -1,18 +1,25 @@
 # 🏘️ Mubawab Scraping - Location
 
-Ce projet a pour objectif de scraper les annonces de **location immobilière** depuis le site **[Mubawab](https://www.mubawab.ma/)**.  
+Ce projet a pour objectif de scraper les annonces de **location immobilière** depuis le site [Mubawab](https://www.mubawab.ma/).  
 Il extrait les informations essentielles sur les biens à louer (titre, prix, localisation, description, etc.), puis les structure dans un format exploitable (CSV).
+
+---
 
 ## 📁 Structure du projet
 
+```
 mubawab_scraping/
 │
-├── mubawab_scraper.py # Contient la logique principale de scraping
-├── app.py # Point d'entrée (main) pour exécuter le scraper
-├── sample_data.csv # Échantillon des données extraites (location uniquement)
-└── README.md # Ce fichier
+├── mubawab_scraper.py     # Contient la logique principale de scraping
+├── app.py                 # Point d'entrée (main) pour exécuter le scraper
+├── sample_data.csv        # Échantillon des données extraites (location uniquement)
+├── requirements.txt       # Liste des dépendances nécessaires
+└── README.md              # Ce fichier
+```
 
-### 🚀 Lancement rapide
+---
+
+## 🚀 Lancement rapide
 
 ### ✅ Prérequis
 
@@ -21,40 +28,32 @@ mubawab_scraping/
   - `requests`
   - `beautifulsoup4`
   - `pandas`
-  - `urllib`
+  - `urllib3`
 
 ### ⚙️ Installation des dépendances
 
+Assurez-vous d’être dans l’environnement virtuel, puis installez les dépendances :
+
 ```bash
 pip install -r requirements.txt
+```
 
-###  ▶️ Exécution
-Lance le scraper avec la commande suivante :
+---
+
+### ▶️ Exécution
+
+Lancez le scraper avec la commande suivante :
 
 ```bash
 python app.py
+```
 
-### 🧪 Exemple de données
-Un extrait des données collectées se trouve dans le fichier sample_data.csv.
-Il contient des colonnes comme :
 
-Titre
 
-Prix
+## 📌 Remarques
 
-Localisation
+- Ce projet se concentre uniquement sur les annonces **de location** et dépend du format actuel du site Mubawab.
+- Le site peut bloquer l'accès en cas de scraping trop fréquent. Il est conseillé d’ajouter des délais (`time.sleep`) entre les requêtes pour éviter d’être banni.
+- Ce projet est à but **éducatif uniquement**.
 
-Description
-
-Superficie
-
-Nombre de pièces
-
-Lien de l’annonce
-
-### 📌 Remarques
-    -Ce projet se concentre uniquement sur les annonces de location, il se concentre sur le format actuel du site.
-
-    -Le site Mubawab peut limiter ou bloquer l’accès en cas de scraping intensif. Utilise des délais (time.sleep) pour limiter la fréquence des requêtes.
-
-    -Pour usage éducatif uniquement.
+---
