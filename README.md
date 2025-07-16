@@ -5,3 +5,9 @@ Il extrait les informations essentielles sur les biens à louer (titre, prix, lo
 
 ## 📁 Structure du projet
 
+mubawab_scraping/
+│
+├── mubawab_scraper.py # Contient la logique principale de scraping
+├── app.py # Point d'entrée (main) pour exécuter le scraper
+├── sample_data.csv # Échantillon des données extraites (location uniquement)
+└── README.md # Ce fichier
